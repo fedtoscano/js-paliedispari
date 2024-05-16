@@ -4,9 +4,19 @@ function isPalyndrome(word){
         invertedWord += word[i];
     }
     
-    if(word===invertedWord){
-        return true
-    }else{
-        return false
-    }
+    return word===invertedWord
 }
+
+// let userChoiche = prompt("Scegli se giocare pari o dispari! (inserisci 'pari' o 'dispari'")
+//     while(userChoiche==="pari"||userChoiche==="dispari"){
+//         userChoiche = prompt("Scegli se giocare pari o dispari! (inserisci 'pari' o 'dispari'")
+//     }
+
+// let pariDispari;
+//     if(userChoiche==="pari"){
+//         pariDispari = true
+//     }else{
+//         pariDispari=false
+//     }
+
+// const userNumber = Number.parseInt(prompt("Inserisci un numero da 1 a 5"),10)
