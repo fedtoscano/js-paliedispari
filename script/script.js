@@ -28,7 +28,7 @@ function makeRandomNum(){
     return Math.floor((Math.random()*5) +1);
 }
 let userNumber = Number.parseInt(prompt("Inserisci un numero da 1 a 5"),10)
-    while(userNumber<1 || userNumber>5){//una sola condizione è valida per entrare nel loop
+    while(userNumber<1 || userNumber>5 ||isNaN(userNumber)){//una sola condizione è valida per entrare nel loop
         userNumber = Number.parseInt(prompt("Inserisci un numero da 1 a 5. Inserisci un numero valido!"),10)
     }
 
