@@ -13,7 +13,7 @@ function isPalyndrome(word){
 
 
 let userChoiche = prompt("Scegli se giocare pari o dispari! (inserisci 'pari' o 'dispari')")
-    while(userChoiche !=="pari" || userChoiche !=="dispari"){//entrambe le condizioni sono valide per entrare nel loop
+    while(userChoiche !=="pari" && userChoiche !=="dispari"){//entrambe le condizioni sono valide per entrare nel loop
         userChoiche = prompt("Scegli se giocare pari o dispari! (inserisci 'pari' o 'dispari')")
     }
 
