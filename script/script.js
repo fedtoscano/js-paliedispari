@@ -43,7 +43,7 @@ function pariODispari(num1, num2, condizione){
         scelta = "dispari"
     }
     
-    if((somma%2===0 && scelta==="pari") && (somma%2===1 && scelta==="dispari")){
+    if((somma%2===0 && scelta==="pari") || (somma%2===1 && scelta==="dispari")){
         console.log("Hai vinto!")
         console.log(`Hai giocato ${num1} e hai scelto ${scelta}. Il pc ha giocato ${num2}`)
         console.log(`La somma è ${somma}`)
