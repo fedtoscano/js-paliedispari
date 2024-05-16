@@ -21,14 +21,18 @@ let pariDispari;
 function makeRandomNum(){
     return Math.floor((Math.random()*5) +1);
 }
-const userNumber = Number.parseInt(prompt("Inserisci un numero da 1 a 5"),10)
-    //! inserire controllo sul numero
-const pcNumber = makeRandomNum()
-pariODispari(userNumber, pcNumber);
+let userNumber = Number.parseInt(prompt("Inserisci un numero da 1 a 5"),10)
+    while(userNumber<1 && userNumber>5){
+        userNumber = Number.parseInt(prompt("Inserisci un numero da 1 a 5. Inserisci un numero valido!"),10)
+    }
 
-function pariODispari(num1, num2){
+const pcNumber = makeRandomNum()
+pariODispari(userNumber, pcNumber, pariDispari);
+
+function pariODispari(num1, num2, condizione){
     const somma = num1+num2
-        if((somma%2===0 && pariDispari===true) && (somma%2===1 && pariDispari===false)){
+        if((somma%2===0 && condizione===true) && (somma%2===1 && condizione===false)){
+            
             console.log("Hai vinto!")
             console.log(`Hai giocato ${num1}. Il pc ha giocato ${num2}`)
         }else{
